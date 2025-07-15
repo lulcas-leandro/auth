@@ -4,7 +4,6 @@ from wtforms.validators import DataRequired, Email, EqualTo, ValidationError
 from app.models import User
 
 msg_obrigatorio = 'Estre campo é obrigatório.'
-msg_user_invalido = 'Por favor, insira um endereço de e-mail válido.'
 msg_senhas_nao_iguais = 'As senhas devem ser iguais.'
 
 class LoginForm(FlaskForm):
