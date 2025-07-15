@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h2>Meu Perfil</h2>
+        <p><strong>Nome:</strong> {{ current_user.name }}</p>
+        <p><strong>Usário:</strong> {{ current_user.user_name }}</p>
+        
+    </div>
+</div>
+{% endblock %}
