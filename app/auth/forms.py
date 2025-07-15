@@ -20,7 +20,7 @@ class RegisterForm(FlaskForm):
         'Repita a senha', validators=[DataRequired(message=msg_obrigatorio), EqualTo('password', message=msg_senhas_nao_iguais)])
     submit = SubmitField('Registrar')
 
-    def validate_name(self, user):
+    def validate_user_name(self, user):
         user =  User.query.filter_by(user_name=user.data).first()
         if user is not None:
             raise ValidationError('Esse usuário esta em uso, por favor use outro.')
