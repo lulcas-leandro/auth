@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="row">
-    <div class="col-md-8 offset-md-2">
-        <h2>Meu Perfil</h2>
+<div class="d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+    <div class="card card-custom p-4 shadow-sm" style="max-width: 400px; width: 100%;">
+        <div class="text-center mb-4">
+            <h2 class="mt-2">Bem-vindo(a), {{ current_user.name }}</h2>
+        </div>
         <p><strong>Nome:</strong> {{ current_user.name }}</p>
         <p><strong>Usário:</strong> {{ current_user.user_name }}</p>
-        
+        <a href="{{ url_for('auth.logout') }}" class="btn btn-danger mt-3">Sair</a>
     </div>
 </div>
 {% endblock %}

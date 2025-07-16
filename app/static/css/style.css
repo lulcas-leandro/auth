@@ -1,0 +1,14 @@
+body {
+    font-family: 'Sagoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f8f9fa;
+}
+
+.card-custom {
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.alert {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
